@@ -25,6 +25,11 @@ header {
     position: relative;
 }
 
+.header {
+    height: 20vh;
+    width: 100vw;
+}
+
 header h1 {
     position: relative;
     z-index: 3;
@@ -224,7 +229,6 @@ button {
     position: relative;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 5em;
 }
 
 .visit-us p {

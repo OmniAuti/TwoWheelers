@@ -44,7 +44,7 @@ header h1 {
 
 .links-container {
     width: calc(60% - 15px);
-    height: 3em;
+    height: 2.75em;
     display: flex;
     justify-content: space-evenly;
     align-items: center;

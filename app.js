@@ -64,53 +64,51 @@ leftBtn.addEventListener('click', () => {
 
 const day = document.querySelectorAll('.day')
 let today = new Date();
+let todayDay = today.getDay();
 let time = today.getHours();
 
 
 function storeDay() {
-
-    let todayDay = today.getDay();
-    let openDay = todayDay - 1;
-
         if (1 < 2) {
-            day[openDay].classList.add('open')
-        } else if (todayDay === 0) {
-            day[0].classList.add('open')
-        } else if (todayDay === 6) {
-            day[6].classList.add('open')
-        }
+            day[todayDay].classList.add('open')
+        } 
 }
 
+const storeOpen = document.querySelector('.open-sign')
+const storeClosed = document.querySelector('.closed-sign')
+const storeOpenSoon = document.querySelector('.opening-soon-sign')
+
 function storeHours() {
-
-    const storeOpen = document.querySelector('.open-sign')
-    const storeClosed = document.querySelector('.closed-sign')
-    const storeOpenSoon = document.querySelector('.opening-soon-sign')
-
-    if (time >= 10 && time < 17) {
+    if (todayDay === 6 || todayDay === 0) {
+        weekendHours()
+    } else if (time >= 10 && time < 19) {
         storeOpen.style.display = "block"
         storeClosed.style.display = "none"
         storeOpenSoon.style.display = "none"
-    } else if (time >= 17 || time <= 6) {
+    } else if (time >= 19 || time <= 5) {
         storeOpen.style.display = "none"
         storeOpenSoon.style.display = "none"
         storeClosed.style.display = "block"
-    } else if (time > 6 && time <= 9) {
+    } else if (time >= 6 && time <= 9) {
         storeOpen.style.display = "none"
         storeOpenSoon.style.display = "block"
         storeClosed.style.display = "none"
-    } else if (day[5] || day[6] && time > 11) {
+    }
+}
+
+function weekendHours() {
+    if (time > 11 && time < 17) {
         storeOpen.style.display = "block"
         storeClosed.style.display = "none"
         storeOpenSoon.style.display = "none"
-    } else if (day[5] || day[6] && time > 16) {
-        storeOpen.style.display = "none"
-        storeOpenSoon.style.display = "none"
-        storeClosed.style.display = "block"
-    } else if (day[5] || day[6] && time > 8) {
+    } else if (time >= 6 && time <= 11) {
         storeOpen.style.display = "none"
         storeOpenSoon.style.display = "block"
         storeClosed.style.display = "none"
+    } else if (time >= 17 || time <= 5)  {
+        storeOpen.style.display = "none"
+        storeOpenSoon.style.display = "none"
+        storeClosed.style.display = "block"
     }
 }
 

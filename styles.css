@@ -18,86 +18,6 @@ p {
     font-size: .75em;
 }
 
-header {
-    height: 65px;
-    width: calc(100% - 15px);
-    margin: 0 auto;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #dcdcdc;
-    position: relative;
-}
-
-.header {
-    height: 20vh;
-    width: 100vw;
-}
-
-header h1 {
-    position: relative;
-    z-index: 3;
-    text-shadow: 1px 1px 1px #fff;
-    font-size: 2.5em;
-    margin: .25em;
-}
-
-.logo {
-    height:75px;
-    width:75px;
-    background-image: url(logo.png);
-    background-size: cover;
-    background-position: center;
-    z-index: 2;
-}
-
-.links-container {
-    width: calc(60% - 15px);
-    height: 2.5em;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    position: absolute;
-    right: -1px;
-    top: 63px;
-    background-color: #dcdcdc;
-    border: 1px solid #000;
-    border-top: none;
-}
-
-.links-container ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-evenly;
-    text-decoration: none;
-    width: 100%;
-    z-index: 5;
-}
-
-.links-container a {
-    text-decoration: none;
-    margin: 0em 1em;
-    color: #000;
-    cursor: pointer;
-}
-
-.visit-us-head {
-    width: calc(40% - 15px);
-    position: absolute;
-    left: 15px;
-    top: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media (max-width: 800px) {
-    .links-container a {
-        font-size: .75em;
-    }
-}
-
 /* ------------------- PHOTO CAROUSEL ---------------- */
 
 .carousel-container {
@@ -231,11 +151,95 @@ button {
     display: block;
 }
 
+
+/* ----------- HEADER ------------- */
+
+header {
+    height: 65px;
+    width: calc(100% - 15px);
+    margin: 0 auto;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dcdcdc;
+    position: relative;
+}
+
+.header {
+    height: 20vh;
+    width: 100vw;
+}
+
+header h1 {
+    position: relative;
+    z-index: 3;
+    text-shadow: 1px 1px 1px #fff;
+    font-size: 2.5em;
+    margin: .25em;
+}
+
+.logo {
+    height:75px;
+    width:75px;
+    background-image: url(logo.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+}
+
+.links-container {
+    width: calc(60% - 15px);
+    height: 2.5em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    right: -1px;
+    top: 63px;
+    background-color: #dcdcdc;
+    border: 1px solid #000;
+    border-top: none;
+}
+
+.links-container ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    text-decoration: none;
+    width: 100%;
+    z-index: 5;
+}
+
+.links-container a {
+    text-decoration: none;
+    margin: 0em 1em;
+    color: #000;
+    cursor: pointer;
+}
+
+.visit-us-head {
+    width: calc(40% - 15px);
+    position: absolute;
+    left: 15px;
+    top: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 800px) {
+    .links-container a {
+        font-size: .65em;
+    }
+}
+
+
 /* --------- VISIT US ----------- */
 
 
 .visit-us {
-    height: 125vh;
+    height: 70vh;
     width: 100vw;
     position: relative;
     display: flex;
@@ -248,77 +252,60 @@ button {
 
 .contact {
     width: 33.3333%;
-    height: 40%;
+    height: 80%;
     margin-left: 1em;
-}
-
-.office-hours {
-    width: 33.3333%;
-    height: 40%;
-    padding: 1em;
     text-align: center;
-}
-
-.caption {
-    margin: 0 auto;
-    position: relative;
-    text-decoration: underline;
-}
-
-table {
-    width: 100%;
-    height: 92%;
-    padding: 0;
-}
-
-.day.open {
-    font-weight: bolder;
-    font-size: 1.15em;
-}
-
-td:nth-last-of-type(even) {
-    text-align: left;
-    padding-left: 5px;
-}
-
-td:nth-last-of-type(odd) {
-    text-align: right;
-    padding-right: 5px;
-}
-
-.open-sign {
-    display: block;
-    color: rgb(56, 168, 56);
-}
-
-.closed-sign {
-    display: block;
-    color: rgb(230, 59, 59);
-}
-
-.opening-soon-sign {
-    display: block;
-    color: rgb(231, 161, 31);
-}
-
-#map {
-    width: 33.3333%;
-    height: 40%;
-    margin-right: 1em;
-}
-
-.contact {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact h4 {
     margin-top: 1.5em;
 }
 
+.directions {
+    background-color: #fff;
+    color: #000;
+    margin-top: 1.75em;
+    border: 1px solid #000;
+    min-width: 90%;
+    height: 60px;
+    cursor: pointer;
+    transition: all ease 1000ms;
+    font-size: 1.5em;
+    border-radius: 2px;
+}
+
+.directions a {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0;
+}
+
+.directions:hover {
+    background-color: #dcdcdc;
+}
+
+.directions:hover .fa-compass {
+    transform: rotate(360deg);
+}
+
+.fa-compass {
+    margin-right: .35em;
+    transition: all ease 1000ms;
+    font-size: 1.25em;
+}
+
 
 .call-in {
     background-color: #000;
-    width: 100%;
+    min-width: 90%;
     height: 60px;
     margin: 1em auto;
     border-radius: 2px;
@@ -366,55 +353,99 @@ td:nth-last-of-type(odd) {
     font-size: 1.25em;
 }
 
-.directions {
-    background-color: #fff;
-    color: #000;
-    margin-top: 1em;
-    border: 1px solid #000;
+
+.office-hours {
+    width: 33.3333%;
+    height: 80%;
+    padding: 1em;
+    text-align: center;
+}
+
+.caption {
+    margin: 0 auto;
+    position: relative;
+    text-decoration: underline;
+}
+
+table {
     width: 100%;
-    height: 60px;
-    cursor: pointer;
-    transition: all ease 1000ms;
-    font-size: 1.5em;
-    border-radius: 2px;
+    height: 90%;
+    padding: 0;
 }
 
-.directions a {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    margin: 0;
+.day.open {
+    font-weight: bolder;
+    font-size: 1.15em;
 }
 
-.directions:hover {
-    background-color: #dcdcdc;
+td:nth-last-of-type(even) {
+    text-align: left;
+    padding-left: 5px;
 }
 
-.directions:hover .fa-compass {
-    transform: rotate(360deg);
+td:nth-last-of-type(odd) {
+    text-align: right;
+    padding-right: 5px;
 }
 
-.fa-compass {
-    margin-right: .35em;
-    transition: all ease 1000ms;
-    font-size: 1.25em;
+.open-sign {
+    display: block;
+    color: rgb(56, 168, 56);
 }
 
-@media (max-width: 800px) {
+.closed-sign {
+    display: block;
+    color: rgb(230, 59, 59);
+}
+
+.opening-soon-sign {
+    display: block;
+    color: rgb(231, 161, 31);
+}
+
+#map {
+    width: 33.3333%;
+    height: 80%;
+    margin-right: 1em;
+}
+
+@media (max-width: 1200px) {
+    .office-hours {
+        font-size: .85em;
+    }
+}
+
+@media (max-width: 850px) {
     .map {
         display: none;
     }
 
     .office-hours {
-        font-size: 1em;
+        font-size: .7em;
     }
 
     .visit-us div {
-        width: 45%;
+        width: 50%;
+    }
+
+    #map {
+        display: none;
+    }
+
+
+    .directions {
+        font-size: 1em;
+    }
+
+    .call-in {
+        font-size: .8em;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .office-hours {
+        font-size: .6em;
     }
 }
 

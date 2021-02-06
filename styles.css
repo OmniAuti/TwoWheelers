@@ -18,9 +18,9 @@ p {
     font-size: .75em;
 }
 
-html::-webkit-scrollbar {
-  display: none;
-}
+html {
+    scrollbar-width: none;
+  }
 
 
   
@@ -132,7 +132,6 @@ button {
 
 .carousel-control {
     position: absolute;
-    
     z-index: 3;
     bottom: 0%;
     right: 0%;
@@ -179,9 +178,7 @@ header {
 }
 
 header h1 {
-    position: relative;
-    z-index: 3;
-    text-shadow: 1px 1px 1px #fff;
+    text-shadow: -2.5px -1px 0px #ef5261;
     font-size: 4em;
     margin: .25em;
 }
@@ -279,7 +276,8 @@ header h1 {
 }
 
 .visit-us p {
-    margin-top: .25em;
+    margin-top: .55em;
+    font-size: 1em;
 }
 
 .contact {
@@ -292,8 +290,10 @@ header h1 {
     align-items: center;
 }
 
-.contact h4 {
-    margin-top: 1.5em;
+.contact h3 {
+    margin-top: 1em;
+    font-size: 1.5em;
+    text-decoration: underline;
 }
 
 .directions {
@@ -384,11 +384,13 @@ header h1 {
     font-size: 1.25em;
 }
 
+
 .office-hours {
     width: 33.3333%;
     height: 90%;
     padding: 1em;
     text-align: center;
+    font-size: 1.25em;
 }
 
 .caption {
@@ -420,17 +422,17 @@ td:nth-last-of-type(odd) {
 
 .open-sign {
     display: block;
-    color: rgb(56, 168, 56);
+    color: #38A838;
 }
 
 .closed-sign {
     display: block;
-    color: rgb(230, 59, 59);
+    color: #ef5261;
 }
 
 .opening-soon-sign {
     display: block;
-    color: rgb(231, 161, 31);
+    color: #E7A11F;
 }
 
 #map {
@@ -441,6 +443,10 @@ td:nth-last-of-type(odd) {
 
 @media (max-width: 1200px) {
     .office-hours {
+        font-size: .85em;
+    }
+
+    .contact h3 {
         font-size: .85em;
     }
 }
@@ -471,6 +477,10 @@ td:nth-last-of-type(odd) {
         font-size: .8em;
     }
 
+    .visit-us p {
+        font-size: .75em;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -492,9 +502,9 @@ td:nth-last-of-type(odd) {
 .sale-box {
     height: 300px;
     width: 100%;
-    border: 1px solid black;
     display: flex;
     transition: transform ease 1000ms;
+    margin-bottom: -1px;
 }
 
 .sale-box:nth-of-type(odd) {

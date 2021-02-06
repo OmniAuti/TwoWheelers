@@ -18,10 +18,9 @@ p {
     font-size: .75em;
 }
 
-html {
-    scrollbar-width: none;
-  }
-
+html::-webkit-scrollbar {
+  display: none;
+}
 
   
 

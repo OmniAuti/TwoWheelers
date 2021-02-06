@@ -4,6 +4,11 @@
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 body {
     font-family: 'Yusei Magic', sans-serif;
     overflow-x: hidden;
@@ -70,7 +75,7 @@ header h1 {
     z-index: 5;
 }
 
-a {
+.links-container a {
     text-decoration: none;
     margin: 0em 1em;
     color: #000;
@@ -85,6 +90,12 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 800px) {
+    .links-container a {
+        font-size: .70em;
+    }
 }
 
 /* ------------------- PHOTO CAROUSEL ---------------- */

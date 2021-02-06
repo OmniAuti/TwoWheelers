@@ -117,7 +117,6 @@ storeDay()
 
 // GOOGLE MAP _____________________________________________________
 
-let map;
 var shop = { lat:41.962220, lng: -87.652397 }
 
 function initMap() {
@@ -142,7 +141,7 @@ function initMap() {
  
  function checkBoxes() {
  
-     const triggerBottom = window.innerHeight/5 * 4
+     const triggerBottom = window.innerHeight / 5 * 4.1
  
      saleBox.forEach(box => {
  

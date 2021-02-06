@@ -336,7 +336,7 @@ td:nth-last-of-type(odd) {
 .answer {
     position: absolute;
     font-size: .55em;
-    bottom: 65%;
+    bottom: 77%;
     right: 100%;
     transform: rotate(220deg);
     opacity: 0;

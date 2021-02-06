@@ -18,9 +18,10 @@ p {
     font-size: .75em;
 }
 
-html::-webkit-scrollbar {
-  display: none;
+html {
+    scrollbar-width: none;
 }
+
 
   
 
@@ -167,7 +168,7 @@ button {
 header {
     height: 60%;
     width: calc(100% - 15px);
-    margin: .25em auto;
+    margin: 0.25em auto;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -193,7 +194,7 @@ header h1 {
 
 .links-container {
     width: calc(60% - 15px);
-    height: 40%;
+    min-height: 45%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -211,7 +212,15 @@ header h1 {
     justify-content: space-evenly;
     text-decoration: none;
     width: 100%;
+    min-height: 100%;
     z-index: 5;
+}
+
+.links-container li {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .links-container a {
@@ -220,6 +229,13 @@ header h1 {
     color: #000;
     cursor: pointer;
     font-size: 1.5em;
+    height: 100%;
+    min-width: 100%;
+    text-align: center;
+}
+
+.links-container a:hover {
+    color: #fff;
 }
 
 .visit-us-head {
@@ -227,11 +243,11 @@ header h1 {
     position: absolute;
     left: 15px;
     top: 100%;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.5em;
-
 }
 
 @media (max-width: 1400px) {
@@ -342,24 +358,6 @@ header h1 {
     margin-top: 3.75em;
 }
 
-.call-in:hover .fa-phone {
-    transform: rotate(125deg);
-}
-
-.call-in:hover .answer {
-    opacity: 1;
-}
-
-.answer {
-    position: absolute;
-    font-size: .55em;
-    bottom: 77%;
-    right: 100%;
-    transform: rotate(220deg);
-    opacity: 0;
-    transition: all ease-out 500ms;
-}
-
 .call-in a {
     width: 100%;
     height: 100%;
@@ -381,6 +379,24 @@ header h1 {
     transition: all ease 250ms;
     position: relative;
     font-size: 1.25em;
+}
+
+.call-in:hover .fa-phone {
+    transform: rotate(125deg);
+}
+
+.call-in:hover .answer {
+    opacity: 1;
+}
+
+.answer {
+    position: absolute;
+    font-size: .75em !important;
+    bottom: 77%;
+    right: 100%;
+    transform: rotate(220deg);
+    opacity: 0;
+    transition: all ease-out 500ms;
 }
 
 

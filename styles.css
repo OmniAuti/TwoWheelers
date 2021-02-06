@@ -94,14 +94,14 @@ header h1 {
 
 @media (max-width: 800px) {
     .links-container a {
-        font-size: .70em;
+        font-size: .75em;
     }
 }
 
 /* ------------------- PHOTO CAROUSEL ---------------- */
 
 .carousel-container {
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
 }
 

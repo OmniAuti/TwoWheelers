@@ -19,13 +19,10 @@ p {
 }
 
 html {
-    -ms-overflow-style: none;
     scrollbar-width: none;
   }
 
-html::-webkit-scrollbar {
-    display: none;
-  }
+
   
 
 /* ------------------- PHOTO CAROUSEL ---------------- */
@@ -470,11 +467,21 @@ td:nth-last-of-type(odd) {
 }
 
 .sale-box {
-    height: 250px;
+    height: 300px;
     width: 100%;
     border: 1px solid black;
+    display: flex;
 }
 
 .sale-info {
-    
+    border: 1px solid black;
+    height: 100%;
+    min-width: 65%;
+}
+
+.sale-pic {
+    border: 1px solid black;
+    height: 100%;
+    min-width: 35%;
+    background-color: red;
 }

@@ -18,11 +18,14 @@ p {
     font-size: .75em;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+  }
+
 html {
+    -ms-overflow-style: none;
     scrollbar-width: none;
-}
-
-
+  }
   
 
 /* ------------------- PHOTO CAROUSEL ---------------- */

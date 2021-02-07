@@ -551,18 +551,18 @@ td:nth-last-of-type(odd) {
     background-repeat: no-repeat;
 }
 
-.sale-pic:nth-last-of-type(1) {
+.sale-pic:first-of-type {
     background-image: url(img/the-arlie.png);
 }
 
-.sale-pic:nth-last-of-type(2) {
+.sale-pic:nth-of-type(3) {
     background-image: url(img/the-roth.png);
 }
 
-.sale-pic:nth-last-of-type(3) {
+.sale-pic:nth-of-type(3) {
     background-image: url(img/the-zo.png);
 }
 
-.sale-pic:nth-last-of-type(4) {
+.sale-pic:nth-of-type(4) {
     background-image: url(img/the-hero.png);
 }

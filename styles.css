@@ -172,7 +172,7 @@ header {
     height: 60%;
     width: calc(100% - 15px);
     margin: 0.25em auto;
-    border: 1px solid black;
+    border: 1px solid #232323;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -205,7 +205,7 @@ header h1 {
     right: -1px;
     top: 100%;
     background-color: #dcdcdc;
-    border: 1px solid #000;
+    border: 1px solid #232323;
     border-top: none;
 }
 
@@ -229,7 +229,7 @@ header h1 {
 .links-container a {
     text-decoration: none;
     margin: 0em 1em;
-    color: #000;
+    color: #232323;
     cursor: pointer;
     font-size: 1.5em;
     height: 100%;
@@ -306,6 +306,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 
 .contact h3 {
@@ -317,14 +318,15 @@ header h1 {
 .directions {
     background-color: #fff;
     color: #000;
-    margin-top: 1.25em;
-    border: 1px solid #000;
+    border: 1px solid #232323;
     min-width: 90%;
     height: 75px;
     cursor: pointer;
     transition: all ease 1000ms;
     font-size: 1.5em;
     border-radius: 2px;
+    position: absolute;
+    bottom: 45%;
 }
 
 .directions a {
@@ -354,11 +356,13 @@ header h1 {
 
 
 .call-in {
-    background-color: #000;
+    background-color: #232323;
     min-width: 90%;
     height: 75px;
     border-radius: 2px;
     margin-top: 3.75em;
+    position: absolute;
+    bottom: 15%;
 }
 
 .call-in a {
@@ -513,7 +517,7 @@ td:nth-last-of-type(odd) {
 
 
 .sales {  
-    height: 100vh;
+    height: 1100px;
     width: 100vw;
 }
 
@@ -537,13 +541,13 @@ td:nth-last-of-type(odd) {
 }
 
 .sale-info {
-    border: 1px solid black;
+    border: 1px solid #232323;
     height: 100%;
     min-width: 65%;
 }
 
 .sale-pic {
-    border: 1px solid black;
+    border: 1px solid #232323;
     height: 100%;
     min-width: 35%;
     overflow: hidden;
@@ -558,3 +562,216 @@ td:nth-last-of-type(odd) {
 }
 
 
+.sale-box h2 {
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+}
+
+
+/* ------------- REPAIRS ----------- */
+
+.repairs {
+    width: 100vw;
+}
+
+.repairs-info p {
+    font-size: .95em;
+    font-weight: 0;
+    margin: 2em 0;
+}
+
+.repairs h2 {
+    text-align: center;
+}
+
+.repairs-info-container {
+    display: flex;
+    align-items: center;
+    height: 500px;
+    width: calc(90% - 15px);
+    margin: 2.5em auto;
+    text-align: left;
+}
+
+.repairs-info-container img {
+    min-width: 500px;
+    min-height: 500px;
+    margin: 0 3em 0 0;
+}
+
+.repairs-info ul {
+    list-style-type:circle;
+    font-weight: none;
+    margin-left: 2.5em;
+}
+
+.repairs-info ul li {
+   margin-top: 1em;
+}
+
+.repairs-info li span {
+    font-size: .65em;
+    display: block;
+}
+
+@media (max-width: 1000px) {
+    
+    .repairs-info-container {
+        height: 300px;
+        margin: 1.5em auto;
+    }
+
+    .repairs-info h1 {
+        font-size: 1.25em;
+    }
+
+    .repairs h2 {
+        font-size: 1em;
+    }
+    
+    .repairs p {
+        font-size: .65rem;
+    }
+
+    .repairs-info ul {
+        font-size: .75em;
+    }
+
+    .repairs-info-container img {
+        min-width: 300px;
+        min-height: 300px;
+        margin: 0 3em 0 0;
+    }
+
+}
+
+.tune-h1 {
+    margin: 1.25em auto;
+    text-align: center;
+}
+
+.tune-up-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 90vh;
+}
+
+.tune-up {
+    height: 100%;
+    width: 23%;
+}
+
+.tune-up-type {
+    background-color: #232323;
+    color: #fff;
+    width: 100%;
+    height: 20%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.tune-up-price {
+    background-color: #adadad;
+    color: #232323;
+    width: 100%;
+    height: 17%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.tune-up-price p {
+    text-align: center;
+}
+
+.tune-up-price h3 {
+    text-align: center;
+}
+
+.repair-sale {
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+}
+
+.repair-sale span {
+    margin: 20px;
+    color: #ef5261;
+    text-shadow: 0 0 2px #232323;
+}
+
+.repair-sale::after {
+    content: '';
+    height: 3px;
+    width: 45%;
+    top: 50%;
+    left: -1%;
+    position: absolute;
+    background-color: #ef5261;
+}
+
+.tune-up-specs {
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 60%;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.not-included {
+    background-color: #adadad;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.additional-repairs {
+    width: 100vw;
+    margin-top: 2.5em;
+}
+
+.additional-repairs h1 {
+    margin: 1em auto;
+    width: 350px;
+}
+
+.repair-tables {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.table-one,
+    .table-two {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 10px;
+}
+
+.table-one tr:nth-of-type(odd),
+    .table-two tr:nth-of-type(odd) {
+    background-color: #dcdcdc;
+    height: 50px;
+}
+
+.table-one tr:nth-of-type(even), 
+    .table-two tr:nth-of-type(even) {
+    height: 50px;
+    background-color: #adadad;
+}
+
+
+
+/* ------ FOOTER -------- */ 
+
+footer {
+    height: 50vh;
+}

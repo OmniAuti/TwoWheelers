@@ -12,6 +12,7 @@ a {
 body {
     font-family: 'Yusei Magic', sans-serif;
     overflow-x: hidden;  
+    -webkit-overflow-x: hidden;
 }
 
 p {

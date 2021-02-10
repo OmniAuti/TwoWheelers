@@ -11,9 +11,11 @@ a {
 
 body {
     font-family: 'Yusei Magic', sans-serif;
-    overflow-x: hidden;  
-    -webkit-overflow-x: hidden;
 }
+
+html, body {
+    overflow-x:hidden 
+  } 
 
 p {
     font-size: .75em;

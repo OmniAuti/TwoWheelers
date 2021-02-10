@@ -177,6 +177,7 @@ header {
     align-items: center;
     background-color: #dcdcdc;
     position: relative;
+    border-radius: 2px;
 }
 
 header h1 {
@@ -206,6 +207,7 @@ header h1 {
     background-color: #dcdcdc;
     border: 1px solid #232323;
     border-top: none;
+    border-radius: 2px;
 }
 
 .links-container ul {
@@ -486,7 +488,6 @@ td:nth-last-of-type(odd) {
         display: none;
     }
 
-
     .directions {
         font-size: 1em;
     }
@@ -593,8 +594,8 @@ td:nth-last-of-type(odd) {
 
 
 .repairs-info-container img {
-    min-width: 500px;
-    min-height: 500px;
+    width: 500px;
+    height: 500px;
     margin-right: 1.5em;
 }
 
@@ -624,8 +625,8 @@ td:nth-last-of-type(odd) {
     }
 
     .repairs-info-container img {
-        min-width: 300px;
-        min-height: 300px;
+        width: 300px;
+        height: 300px;
     }
 }
 
@@ -652,13 +653,14 @@ td:nth-last-of-type(odd) {
     width: 23%;
     text-align: center;
     border: 1px solid #232323;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.5);
     border-radius: 3px;
 }
 
 .tune-up-type {
     background-color: #232323;
     color: #fff;
+    text-shadow: 1px 1px 1px #ef5261;
     width: 100%;
     height: 20%;
     display: flex; 
@@ -715,6 +717,7 @@ td:nth-last-of-type(odd) {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 0 0 2px 2px;
 }
 
 .additional-repairs {
@@ -740,7 +743,7 @@ td:nth-last-of-type(odd) {
     width: 50%;
     border-collapse: collapse;
     margin: 10px;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
 .table-one tr:nth-of-type(odd),
@@ -791,4 +794,6 @@ td:nth-last-of-type(odd) {
 
 footer {
     height: 50vh;
+    background-color: #dcdcdc;
+    margin-top: 2.5em;
 }

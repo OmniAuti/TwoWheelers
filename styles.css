@@ -17,10 +17,6 @@ html, body {
     overflow-x:hidden 
   } 
 
-p {
-    font-size: .75em;
-}
-
 body::-webkit-scrollbar {
     display: none;
   }
@@ -323,13 +319,12 @@ header h1 {
     color: #000;
     border: 1px solid #232323;
     min-width: 90%;
-    height: 75px;
+    height: 85px;
     cursor: pointer;
     transition: all ease 1000ms;
     font-size: 1.5em;
     border-radius: 2px;
-    position: absolute;
-    bottom: 45%;
+    margin-top: 1.5em;
 }
 
 .directions a {
@@ -361,11 +356,9 @@ header h1 {
 .call-in {
     background-color: #232323;
     min-width: 90%;
-    height: 75px;
+    height: 85px;
     border-radius: 2px;
-    margin-top: 3.75em;
-    position: absolute;
-    bottom: 15%;
+    margin-top: 2.5em;
 }
 
 .call-in a {
@@ -508,9 +501,9 @@ td:nth-last-of-type(odd) {
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
     .office-hours {
-        font-size: .6em;
+        font-size: .5em;
     }
 }
 
@@ -584,23 +577,25 @@ td:nth-last-of-type(odd) {
     margin: 2em 0;
 }
 
-.repairs h2 {
-    text-align: center;
-}
-
 .repairs-info-container {
     display: flex;
     align-items: center;
-    height: 500px;
+    justify-content: center;
     width: calc(90% - 15px);
     margin: 2.5em auto;
-    text-align: left;
 }
+
+.repairs-info {
+    height: calc(95% - 10px);
+    width: 100%;
+    margin: 6em 1.5em;
+}
+
 
 .repairs-info-container img {
     min-width: 500px;
     min-height: 500px;
-    margin: 0 3em 0 0;
+    margin-right: 1.5em;
 }
 
 .repairs-info ul {
@@ -609,8 +604,8 @@ td:nth-last-of-type(odd) {
     margin-left: 2.5em;
 }
 
-.repairs-info ul li {
-   margin-top: 1em;
+.repairs-info li {
+    margin-top: .5em;
 }
 
 .repairs-info li span {
@@ -621,32 +616,23 @@ td:nth-last-of-type(odd) {
 @media (max-width: 1000px) {
     
     .repairs-info-container {
-        height: 300px;
-        margin: 1.5em auto;
+        height: 300px
     }
 
-    .repairs-info h1 {
-        font-size: 1.25em;
-    }
-
-    .repairs h2 {
-        font-size: 1em;
-    }
-    
-    .repairs p {
-        font-size: .65rem;
-    }
-
-    .repairs-info ul {
+    .repairs-info {
         font-size: .75em;
     }
 
     .repairs-info-container img {
         min-width: 300px;
         min-height: 300px;
-        margin: 0 3em 0 0;
     }
+}
 
+@media (max-width: 800px) {
+    .repairs-info {
+        font-size: .65em;
+    }
 }
 
 .tune-h1 {
@@ -662,8 +648,12 @@ td:nth-last-of-type(odd) {
 }
 
 .tune-up {
-    height: 100%;
+    height: 90vh;
     width: 23%;
+    text-align: center;
+    border: 1px solid #232323;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
+    border-radius: 3px;
 }
 
 .tune-up-type {
@@ -674,24 +664,17 @@ td:nth-last-of-type(odd) {
     display: flex; 
     align-items: center;
     justify-content: center;
+    border-radius: 2px 2px 0 0;
 }
 
 .tune-up-price {
     background-color: #adadad;
     color: #232323;
     width: 100%;
-    height: 17%;
+    height: 15%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
-}
-
-.tune-up-price p {
-    text-align: center;
-}
-
-.tune-up-price h3 {
-    text-align: center;
 }
 
 .repair-sale {
@@ -701,7 +684,7 @@ td:nth-last-of-type(odd) {
 }
 
 .repair-sale span {
-    margin: 20px;
+    margin: 10px;
     color: #ef5261;
     text-shadow: 0 0 2px #232323;
 }
@@ -719,11 +702,11 @@ td:nth-last-of-type(odd) {
 .tune-up-specs {
     background-color: #dcdcdc;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: column;
     height: 60%;
-    text-align: center;
-    font-size: 1.25em;
+    align-items: center;
+    width: 100%;
 }
 
 .not-included {
@@ -757,6 +740,7 @@ td:nth-last-of-type(odd) {
     width: 50%;
     border-collapse: collapse;
     margin: 10px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.4);
 }
 
 .table-one tr:nth-of-type(odd),
@@ -771,6 +755,36 @@ td:nth-last-of-type(odd) {
     background-color: #adadad;
 }
 
+@media (max-width: 1000px) {
+    .tune-up {
+            font-size: .75em
+    }
+}
+
+
+@media (max-width: 850px) {
+    .table-one, 
+        .table-two {
+        font-size: .85em;
+    }
+
+    .additional-repairs h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .tune-up-specs {
+        font-size: .75em;
+    }
+
+    .not-included {
+        font-size: .75em;
+    }
+
+    .repairs ul {
+        font-size: .75em;
+    }
+}
 
 
 /* ------ FOOTER -------- */ 

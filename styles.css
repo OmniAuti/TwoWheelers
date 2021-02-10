@@ -236,10 +236,13 @@ header h1 {
     height: 100%;
     min-width: 100%;
     text-align: center;
+    transition: all ease-in-out 750ms;
 }
 
+
 .links-container a:hover {
-    color: #fff;
+    text-shadow: -1px -.5px 0px #ef5261;
+    letter-spacing: .65em;
 }
 
 .visit-us-head {
@@ -742,7 +745,7 @@ td:nth-last-of-type(odd) {
     .table-two {
     width: 50%;
     border-collapse: collapse;
-    margin: 10px;
+    margin: 1em;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
 }
 
@@ -793,7 +796,120 @@ td:nth-last-of-type(odd) {
 /* ------ FOOTER -------- */ 
 
 footer {
-    height: 50vh;
+    height: 45vh;
+    width: 100vw;
     background-color: #dcdcdc;
     margin-top: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer div {
+    width: 25%;
+    height: 90%;
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.footer-contact address {
+    margin-top: 1.5em;
+}
+
+.footer-contact p:first-of-type {
+    text-decoration: underline;
+}
+
+.footer-call-in {
+    width: 100%;
+    text-align: left;
+    margin-top: 2.5em;
+    margin-left: 0;
+}
+
+.footer-directions {
+    width: 100%;
+    height: 50px;
+    text-align: left;
+    margin-top: 2.5em;
+    margin-left: 0;
+}
+
+.mailing-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    position: relative;
+}
+
+.mailing-list form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%)
+}
+
+.mailing-list button {
+    border-radius: 2px;
+    transition: all ease-in-out 250ms;
+}
+
+.mailing-list button:hover {
+    box-shadow: 0px 1px 5px 1px #000;
+}
+
+.mailing-list button:active {
+    transform: scale(.98);
+}
+
+.email-list {
+    font-size: 1.55em;
+    margin: 10px;
+    border-radius: 2px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid #232323;
+    box-shadow: -.5px 1px .5px #ef5261;
+    text-align: center;
+}
+
+.email-list:focus {
+    outline: none;
+}
+
+.fa-envelope {
+    margin: 0 10px;
+}
+
+
+.footer-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: right;
+}
+
+.footer-links li {
+    width: 100%;
+    text-align: right;
+    font-size: 1.5em;
+}
+
+.footer-links li a {
+    transition: all ease-in-out 750ms;
+}
+
+.footer-links li a:hover {
+        text-shadow: -1px -.5px 0px #ef5261;
+        letter-spacing: .25em;
 }

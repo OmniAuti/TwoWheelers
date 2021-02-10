@@ -803,6 +803,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    border-top: 1px solid #232323;
 }
 
 footer div {

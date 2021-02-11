@@ -204,15 +204,16 @@ fetch(api)
         const wind = Math.ceil(data.wind.speed)
 
         const description = current[0].main
-        const feels = Math.floor(data.main.feels_like)
 
-        console.log(data)
+        const weatherIcon = current[0].main
+
+        const feels = Math.floor(data.main.feels_like)
 
         tempDiv.innerHTML = `Current Temperature: ${temp}\xB0F`
         weatherDesc.innerHTML = `${description}&#33`
         windSpeed.innerHTML = `Wind: ${wind}mph`
         feelsLike.innerHTML = `Real Feel: ${feels}\xB0F`
-        weatherImg.src = `../weatherapp/${description}.png`
+        weatherImg.src = `weatherapp/${weatherIcon}.png`
         visibility.innerHTML = `Visibility: ${vis} miles`
         humidityDiv.innerHTML = `Humidity: ${humidity}&#37`
         windDirectDiv.innerHTML = windDirect

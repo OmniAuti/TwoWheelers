@@ -212,7 +212,7 @@ fetch(api)
         weatherDesc.innerHTML = `${description}&#33`
         windSpeed.innerHTML = `Wind: ${wind}mph`
         feelsLike.innerHTML = `Real Feel: ${feels}\xB0F`
-        weatherImg.src = `/weatherapp/${description}.png`
+        weatherImg.src = `../weatherapp/${description}.png`
         visibility.innerHTML = `Visibility: ${vis} miles`
         humidityDiv.innerHTML = `Humidity: ${humidity}&#37`
         windDirectDiv.innerHTML = windDirect

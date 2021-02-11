@@ -462,6 +462,7 @@ td:nth-last-of-type(odd) {
     width: 33.3333%;
     height: 90%;
     margin-right: 1em;
+    border: 1px solid #232323;
 }
 
 @media (max-width: 1200px) {
@@ -791,6 +792,90 @@ td:nth-last-of-type(odd) {
         font-size: .75em;
     }
 }
+/* ------------ APPS ------------ */
+
+.biking-apps {
+    height: 65vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bike-lanes {
+    height: 95%;
+    width: 40%;
+    text-align: center;
+}
+
+#bike-map {
+    width: 100%;
+    height: 90%;
+    border: 1px solid #232323;
+}
+
+.bike-weather {
+    height: 95%;
+    width: 40%;
+    text-align: center;
+}
+
+.weather-container {
+    margin-top: 1.5em;
+    position: relative;
+    height: 80%;
+}
+
+.weather-icon {
+    position: absolute;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+#weather-icon {
+    height: 75px;
+    width: 75px;
+}
+
+.temp {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+#temp-feels {
+   font-size: .75em;
+}
+
+.max-min-temp {
+    position: relative;
+    top: 25px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.wind {
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%);
+}
+
+.visibility {
+    position: absolute;
+    left: 10%;
+    bottom: 10%
+}
+
+.humidity {
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+}
 
 
 /* ------ FOOTER -------- */ 
@@ -799,7 +884,6 @@ footer {
     height: 45vh;
     width: 100vw;
     background-color: #dcdcdc;
-    margin-top: 2.5em;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -865,7 +949,7 @@ footer div {
 }
 
 .mailing-list button:hover {
-    box-shadow: 0px 1px 5px 1px #000;
+    box-shadow: 0px 1px 5px 1px #232323;
 }
 
 .mailing-list button:active {
@@ -879,7 +963,7 @@ footer div {
     border: none;
     background-color: transparent;
     border-bottom: 1px solid #232323;
-    box-shadow: -.1px 1px .25px #ef5261;
+    box-shadow: 0px 1px .25px #ef5261;
     text-align: center;
 }
 
@@ -890,7 +974,6 @@ footer div {
 .fa-envelope {
     margin: 0 10px;
 }
-
 
 .footer-links {
     list-style-type: none;
@@ -903,7 +986,7 @@ footer div {
 .footer-links li {
     width: 100%;
     text-align: right;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 .footer-links li a {

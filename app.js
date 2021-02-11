@@ -5,6 +5,7 @@ const leftBtn = document.getElementById('left')
 const rightBtn = document.getElementById('right')
 const pics = document.querySelectorAll('.pics')
 const pause = document.querySelector('.carousel-control')
+
 let idx = 0
 let interval = setInterval(run, 2500)
 
@@ -120,16 +121,29 @@ storeDay()
 var shop = { lat:41.962220, lng: -87.652397 }
 
 function initMap() {
-  map = new google.maps.Map(document.getElementById("map"), {
+  const map = new google.maps.Map(document.getElementById("map"), {
     center: shop,
     zoom: 14,
     streetViewControl: false,
     mapTypeControl: false
   });
 
+  const bikeMap = new google.maps.Map(document.getElementById("bike-map"), {
+    center: { lat: 41.878113, lng: -87.629799 },
+    zoom: 11,
+    mapTypeControl: false,
+    mapTypeId: 'hybrid'
+  });
+
+  const bikeLayer = new google.maps.BicyclingLayer();
+  bikeLayer.setMap(bikeMap);
+
+
+
   var marker = new google.maps.Marker({
       position: shop,
       map: map
+
   })
 }
 
@@ -154,3 +168,53 @@ function initMap() {
          }
      })
  }
+
+ // WEATHER APP ____________________
+const tempDiv = document.getElementById('temp')
+const weatherDesc = document.getElementById('weather-desc')
+const windSpeed = document.getElementById('wind')
+const weatherImg = document.getElementById('weather-icon')
+const feelsLike = document.getElementById('temp-feels')
+
+const visibility = document.getElementById('visibility')
+const maxTempDiv = document.getElementById('max-temp')
+const minTempDiv = document.getElementById('min-temp')
+const humidityDiv = document.getElementById('humidity')
+const windDirectDiv = document.getElementById('wind-direction')
+
+
+ const weatherNow = fetch('http://api.openweathermap.org/data/2.5/weather?q=chicago&appid=64795acd7778d8dcbd8100c83e28916f&units=imperial')
+    .then(response => {
+        return response.json()
+    })
+    .then(data => {
+
+
+
+        const temp = Math.floor(data.main.temp)
+        const current = data.weather
+
+        const vis = Math.floor(data.visibility/1609)
+        const windDirect = data.wind.deg
+        const humidity = data.main.humidity
+        const maxTemp = data.main.temp_max
+        const minTemp = data.main.temp_min
+
+        const wind = Math.ceil(data.wind.speed)
+
+        const description = current[0].main
+        const feels = Math.floor(data.main.feels_like)
+
+        console.log(data)
+
+        tempDiv.innerHTML = `Current Temperature: ${temp}\xB0F`
+        weatherDesc.innerHTML = `${description}&#33`
+        windSpeed.innerHTML = `Wind: ${wind}mph`
+        feelsLike.innerHTML = `Real Feel: ${feels}\xB0F`
+        weatherImg.src = `weatherapp/${description}.png`
+        visibility.innerHTML = `Visibility: ${vis} miles`
+        humidityDiv.innerHTML = `Humidity: ${humidity}&#37`
+        windDirectDiv.innerHTML = windDirect
+        maxTempDiv.innerHTML = `Today's High: ${maxTemp}`
+        minTempDiv.innerHTML = `Today's Low: ${minTemp}`
+    })

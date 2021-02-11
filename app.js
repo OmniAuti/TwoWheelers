@@ -182,7 +182,7 @@ const minTempDiv = document.getElementById('min-temp')
 const humidityDiv = document.getElementById('humidity')
 const windDirectDiv = document.getElementById('wind-direction')
 
-var api = 'http://api.openweathermap.org/data/2.5/weather?q=chicago&appid=64795acd7778d8dcbd8100c83e28916f&units=imperial'
+let api = 'https://api.openweathermap.org/data/2.5/weather?q=chicago&appid=64795acd7778d8dcbd8100c83e28916f&units=imperial'
 
 fetch(api)
     .then(response => {
@@ -198,8 +198,8 @@ fetch(api)
         const vis = Math.floor(data.visibility/1609)
         const windDirect = data.wind.deg
         const humidity = data.main.humidity
-        const maxTemp = data.main.temp_max
-        const minTemp = data.main.temp_min
+        const maxTemp = Math.floor(data.main.temp_max)
+        const minTemp = Math.floor(data.main.temp_min)
 
         const wind = Math.ceil(data.wind.speed)
 

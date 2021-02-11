@@ -182,8 +182,9 @@ const minTempDiv = document.getElementById('min-temp')
 const humidityDiv = document.getElementById('humidity')
 const windDirectDiv = document.getElementById('wind-direction')
 
+var api = 'http://api.openweathermap.org/data/2.5/weather?q=chicago&appid=64795acd7778d8dcbd8100c83e28916f&units=imperial'
 
- const weatherNow = fetch('http://api.openweathermap.org/data/2.5/weather?q=chicago&appid=64795acd7778d8dcbd8100c83e28916f&units=imperial')
+fetch(api)
     .then(response => {
         return response.json()
     })

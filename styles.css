@@ -1090,7 +1090,7 @@ footer div {
 
 .email-list {
     font-size: 1em;
-    width: 125%;
+    width: 100%;
     margin: 10px;
     border-radius: 2px;
     outline: none;
@@ -1147,5 +1147,6 @@ footer div {
 
     .email-list {
         font-size: .70em;
+        width: 120%;
     }
 }

@@ -1152,13 +1152,17 @@ footer div {
 
 @media (max-width: 850px) {
     footer {
-        font-size: .6em;
+        font-size: .75em;
         height:40vh;
     }
 
     .email-list {
         font-size: .7em;
         width: 100%;
+    }
+
+    footer h3 {
+        font-size: .85em;
     }
 
 

@@ -481,7 +481,7 @@ td:nth-last-of-type(odd) {
     }
 
     .office-hours {
-        font-size: .7em;
+        font-size: .5em;
     }
 
     .visit-us div {
@@ -494,22 +494,20 @@ td:nth-last-of-type(odd) {
 
     .directions {
         font-size: 1em;
+        height: 125px;
     }
 
     .call-in {
         font-size: .8em;
+        height: 125px;
     }
 
     .visit-us p {
         font-size: .75em;
     }
 
-}
+    
 
-@media (max-width: 600px) {
-    .office-hours {
-        font-size: .5em;
-    }
 }
 
 

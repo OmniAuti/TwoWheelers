@@ -46,11 +46,11 @@ html {
 
 @media (max-width: 850px) {
     .carousel{
-    height: calc(77.5vh - 20vh);
+    height: calc(77.5vh - 15vh);
     }
 
     .carousel-container {
-        height: calc(100vh - 20vh);
+        height: calc(100vh - 15vh);
     }
 }
 

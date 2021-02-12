@@ -31,7 +31,7 @@ html {
 /* ------------------- PHOTO CAROUSEL ---------------- */
 
 .carousel-container {
-    min-height: 100vh;
+    height: 100vh;
     width: 100vw;
 }
 
@@ -42,6 +42,16 @@ html {
     margin: .75em auto;
     position: relative;
     overflow: hidden;
+}
+
+@media (max-width: 850px) {
+    .carousel{
+    height: calc(77.5vh - 56px);
+    }
+
+    .carousel-container {
+        height: calc(100vh - 56px);
+    }
 }
 
 .image-container {

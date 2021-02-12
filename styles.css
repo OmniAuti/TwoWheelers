@@ -661,7 +661,7 @@ td:nth-last-of-type(odd) {
 
     .repairs-info {
         font-size: .65em;
-        margin: 0;
+        margin: 1.5em 0 0 0;
     }
 
     .repairs-info li {
@@ -965,12 +965,21 @@ footer div {
 
 .footer-contact {
     display: flex;
+    justify-content: space-around;
     flex-direction: column;
-    align-items: left;
+}
+
+.footer-contact h3 {
+    height: 25%;
+    justify-content: center;
 }
 
 .footer-contact address {
-    margin-top: 1.5em;
+    height: 25%;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
 }
 
 .footer-contact p:first-of-type {
@@ -980,16 +989,21 @@ footer div {
 .footer-call-in {
     width: 100%;
     text-align: left;
-    margin-top: 2.5em;
     margin-left: 0;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
 .footer-directions {
     width: 100%;
-    height: 50px;
     text-align: left;
-    margin-top: 2.5em;
     margin-left: 0;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 
 .mailing-list {
@@ -1028,13 +1042,14 @@ footer div {
 }
 
 .email-list {
-    font-size: 1.25em;
+    font-size: 1em;
     margin: 10px;
     border-radius: 2px;
     border: none;
+    outline: none;
     background-color: transparent;
     border-bottom: 1px solid #232323;
-    box-shadow: 0px 1px .25px #ef5261;
+    box-shadow: 0px 2px .15px #ef5261;
     text-align: center;
 }
 

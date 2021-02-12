@@ -1021,6 +1021,7 @@ footer div {
     align-items: left;
     justify-content: left;
     flex-direction: column;
+    font-size: .8em;
 }
 
 .footer-contact p:first-of-type {
@@ -1129,14 +1130,16 @@ footer div {
 
 .footer-links li {
     width: 100%;
-    text-align: right;
     font-size: 1.25em;
     height: 25%;
+    display: flex;
+    align-items: center;
 }
 
 .footer-links li a {
     transition: all ease-in-out 750ms;
     -webkit-transition: all ease-in-out 750ms;
+    width: 100%;
 }
 
 .footer-links li a:hover {
@@ -1148,7 +1151,7 @@ footer div {
 
 @media (max-width: 850px) {
     footer {
-        font-size: .7em;
+        font-size: .65em;
         height:40vh;
     }
 

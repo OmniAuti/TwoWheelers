@@ -638,6 +638,10 @@ td:nth-last-of-type(odd) {
     width: 100%;
 }
 
+.repairs-info h1 {
+   text-decoration: underline;
+}
+
 .repairs-info-container img {
     width: 500px;
     height: 500px;

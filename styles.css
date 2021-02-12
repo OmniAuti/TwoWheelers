@@ -1123,10 +1123,15 @@ footer div {
     text-align: right;
 }
 
+.footer-links h3 {
+    height: 25%;
+}
+
 .footer-links li {
     width: 100%;
     text-align: right;
     font-size: 1.25em;
+    height: 25%;
 }
 
 .footer-links li a {

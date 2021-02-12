@@ -1088,17 +1088,20 @@ footer div {
     margin: 10px;
     border-radius: 2px;
     outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     border-bottom: 2px solid #232323;
-    border-top: solid 2px #dcdcdc;
-    border-left: solid 2px #dcdcdc;
-    border-right: solid 2px #dcdcdc;
     border-radius: 2px;
-    background-color: #dcdcdc;
+    background-color: #fff;
     text-align: center;
+    box-shadow: none;
 }
 
-.email-list:focus {
+.email-list:focus,
+.email-list:active {
     outline: none;
+    border-bottom: 2px solid #ef5261;
 }
 
 .fa-envelope {
@@ -1138,6 +1141,5 @@ footer div {
     .email-list {
         font-size: .85em;
         padding: .75em;
-        box-shadow: inset 0px 0px 1px #dcdcdc;
     }
 }

@@ -46,7 +46,7 @@ html {
 
 @media (max-width: 850px) {
     .carousel{
-    height: calc(77.5vh - 10vh);
+    height: calc(77.5vh - 15vh);
     }
 
     .carousel-container {

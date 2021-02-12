@@ -1000,7 +1000,6 @@ footer {
 }
 
 footer div {
-    width: 25%;
     height: 90%;
 }
 
@@ -1008,6 +1007,7 @@ footer div {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
+    width: 25%;
 }
 
 .footer-contact h3 {
@@ -1122,6 +1122,7 @@ footer div {
     justify-content: space-between;
     flex-direction: column;
     text-align: right;
+    width: 25%;
 }
 
 .footer-links h3 {
@@ -1151,7 +1152,7 @@ footer div {
 
 @media (max-width: 850px) {
     footer {
-        font-size: .65em;
+        font-size: .6em;
         height:40vh;
     }
 
@@ -1159,4 +1160,6 @@ footer div {
         font-size: .7em;
         width: 100%;
     }
+
+
 }

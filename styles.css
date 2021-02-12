@@ -874,7 +874,7 @@ hr {
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 50%;
+    height: 45%;
 }
 
 #temp {
@@ -882,7 +882,7 @@ hr {
 }
 
 .bottom-weather {
-    height: 10%;
+    height: 15%;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -968,7 +968,7 @@ footer div {
 }
 
 .email-list {
-    font-size: 1.55em;
+    font-size: 1.25em;
     margin: 10px;
     border-radius: 2px;
     border: none;

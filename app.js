@@ -194,19 +194,14 @@ fetch(api)
 
         const temp = Math.floor(data.main.temp)
         const current = data.weather
-
         const vis = Math.floor(data.visibility/1609)
         const windDirect = data.wind.deg
         const humidity = data.main.humidity
         const maxTemp = Math.floor(data.main.temp_max)
         const minTemp = Math.floor(data.main.temp_min)
-
         const wind = Math.ceil(data.wind.speed)
-
         const description = current[0].main
-
         const weatherIcon = current[0].main
-
         const feels = Math.floor(data.main.feels_like)
 
         tempDiv.innerHTML = `Currently: ${temp}\xB0F`
@@ -216,7 +211,25 @@ fetch(api)
         weatherImg.src = `weatherapp/${weatherIcon}.png`
         visibility.innerHTML = `Visibility: ${vis} miles`
         humidityDiv.innerHTML = `Humidity: ${humidity} &#37`
-        windDirectDiv.innerHTML = windDirect
         maxTempDiv.innerHTML = `Today's High: ${maxTemp}`
         minTempDiv.innerHTML = `Today's Low: ${minTemp}`
+
+
+            if (windDirect >= 341 || windDirect <= 25) {
+                windDirectDiv.innerHTML = 'North'
+            } else if (windDirect >= 26 && windDirect <= 70) {
+                windDirectDiv.innerHTML = 'North East'
+            } else if (windDirect >= 71 && windDirect <= 115) {
+                windDirectDiv.innerHTML = 'East'
+            } else if (windDirect >= 116 && windDirect <= 160) {
+                windDirectDiv.innerHTML = 'South East'
+            } else if (windDirect >= 161 && windDirect <= 205) {
+                windDirectDiv.innerHTML = 'South'
+            } else if (windDirect >= 206 && windDirect <= 250) {
+                windDirectDiv.innerHTML = 'South West'
+            } else if (windDirect >= 251 && windDirect <= 295) {
+                windDirectDiv.innerHTML = 'West'
+            } else if (windDirect >= 296 && windDirect <= 340) {
+                windDirectDiv.innerHTML = 'North West'
+            }
     })

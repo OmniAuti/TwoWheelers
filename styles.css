@@ -46,7 +46,9 @@ html {
 .image-container {
     display: flex;
     transform: translateX(0);
+    -webkit-transform: translateX(0);
     transition: transform 750ms ease-in-out;
+    -webkit-transition: transform 750ms ease-in-out;
     height: 100%;
 }
 
@@ -113,6 +115,7 @@ button {
 .img-btn-left:active,
     .img-btn-left:disabled  {
         text-shadow: -1px 1px 1px #000;
+        -webkit-transform: translateX(2px);;
         transform: translateX(2px);
         opacity: .5;
 }
@@ -129,6 +132,7 @@ button {
     .img-btn-right:disabled {
     text-shadow: -1px 1px 1px #000;
     transform: translateX(2px);
+    -webkit-transform: translateX(2px);
     opacity: .5;
 }
 
@@ -144,6 +148,7 @@ button {
 .carousel-control:active {
     text-shadow: -1px 1px 1px #000;
     transform: translateX(1px);
+    -webkit-transform: translateX(1px);
     opacity: .5;
 }
 
@@ -237,6 +242,7 @@ header h1 {
     min-width: 100%;
     text-align: center;
     transition: all ease-in-out 750ms;
+    -webkit-transition: all ease-in-out 750ms;
 }
 
 
@@ -290,7 +296,7 @@ header h1 {
 
 
 .visit-us {
-    height: 70vh;
+    height: 65vh;
     width: 100vw;
     position: relative;
     display: flex;
@@ -304,7 +310,7 @@ header h1 {
 
 .contact {
     width: 33.3333%;
-    height: 90%;
+    height: 95%;
     margin-left: 1em;
     text-align: center;
     display: flex;
@@ -327,6 +333,7 @@ header h1 {
     height: 85px;
     cursor: pointer;
     transition: all ease 1000ms;
+    -webkit-transition: all ease 1000ms;
     font-size: 1.5em;
     border-radius: 2px;
     margin-top: 1.5em;
@@ -349,11 +356,13 @@ header h1 {
 
 .directions:hover .fa-compass {
     transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
 }
 
 .fa-compass {
     margin-right: .35em;
     transition: all ease 1000ms;
+    -webkit-transition: all ease 1000ms;
     font-size: 1.25em;
 }
 
@@ -383,14 +392,17 @@ header h1 {
 
 .fa-phone {
     transform: rotate(100deg);
+    -webkit-transform: rotate(100deg);
     margin-right: .35em;
     transition: all ease 250ms;
+    -webkit-transition: all ease 250ms;
     position: relative;
     font-size: 1.25em;
 }
 
 .call-in:hover .fa-phone {
     transform: rotate(125deg);
+    -webkit-transform: rotate(125deg);
 }
 
 .call-in:hover .answer {
@@ -403,14 +415,16 @@ header h1 {
     bottom: 77%;
     right: 100%;
     transform: rotate(220deg);
+    -webkit-transform: rotate(220deg);
     opacity: 0;
     transition: all ease-out 500ms;
+    -webkit-transition: all ease-out 500ms;
 }
 
 
 .office-hours {
     width: 33.3333%;
-    height: 90%;
+    height: 95%;
     padding: 1em;
     text-align: center;
     font-size: 1.25em;
@@ -460,7 +474,7 @@ td:nth-last-of-type(odd) {
 
 #map {
     width: 33.3333%;
-    height: 90%;
+    height: 95%;
     margin-right: 1em;
     border: 1px solid #232323;
 }
@@ -493,6 +507,7 @@ td:nth-last-of-type(odd) {
     }
 
     .directions {
+        margin-top: 4em;
         font-size: 1em;
         height: 125px;
     }
@@ -505,8 +520,6 @@ td:nth-last-of-type(odd) {
     .visit-us p {
         font-size: .75em;
     }
-
-    
 
 }
 
@@ -525,18 +538,22 @@ td:nth-last-of-type(odd) {
     width: 100%;
     display: flex;
     transition: transform ease 1000ms;
+    -webkit-transition: transform ease 1000ms;
     margin-bottom: -1px;
 }
 
 .sale-box:nth-of-type(odd) {
     transform: translateX(-150%);
+    -webkit-transform: translateX(-150%);
 }
 .sale-box:nth-of-type(even) {
     transform: translateX(150%);
+    -webkit-transform: translateX(150%);
 }
 
 .sale-box.show {
     transform: translateX(0%);
+    -webkit-transform: translateX(0%);
 }
 
 .sale-info {
@@ -594,7 +611,6 @@ td:nth-last-of-type(odd) {
     margin: 6em 1.5em;
 }
 
-
 .repairs-info-container img {
     width: 500px;
     height: 500px;
@@ -602,7 +618,7 @@ td:nth-last-of-type(odd) {
 }
 
 .repairs-info ul {
-    list-style-type:circle;
+    list-style-type: circle;
     font-weight: none;
     margin-left: 2.5em;
 }
@@ -617,10 +633,6 @@ td:nth-last-of-type(odd) {
 }
 
 @media (max-width: 1000px) {
-    
-    .repairs-info-container {
-        height: 300px
-    }
 
     .repairs-info {
         font-size: .75em;
@@ -632,10 +644,36 @@ td:nth-last-of-type(odd) {
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
+
+    .repairs-info-container {
+        flex-direction: column;
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .repairs-info-container img {
+        width: 100%;
+        height: 150px;
+        margin: 0;
+        object-fit: cover;
+    }
+
     .repairs-info {
         font-size: .65em;
+        margin: 0;
     }
+
+    .repairs-info li {
+        display: inline-block; 
+        margin: 1em;
+    }
+
+    .repairs-info ul {
+        margin-left: 0;
+        font-size: .75em;
+    }
+
 }
 
 .tune-h1 {
@@ -766,11 +804,18 @@ td:nth-last-of-type(odd) {
     }
 }
 
-
 @media (max-width: 850px) {
+
+    .repair-tables {
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+    }
+
     .table-one, 
         .table-two {
         font-size: .85em;
+        width: 100%;
     }
 
     .additional-repairs h1 {
@@ -783,10 +828,6 @@ td:nth-last-of-type(odd) {
     }
 
     .not-included {
-        font-size: .75em;
-    }
-
-    .repairs ul {
         font-size: .75em;
     }
 }
@@ -887,6 +928,24 @@ hr {
     align-items: center;
 }
 
+@media (max-width: 850px) {
+    
+    .biking-apps {
+        flex-direction: column;
+        height: 150vh;
+    }
+    
+    .bike-lanes {
+        width: 75%;
+        margin: 1em auto;
+    }
+    
+    .bike-weather {
+        width: 75%;
+        margin: 1em auto;
+    }
+}
+
 /* ------ FOOTER -------- */ 
 
 footer {
@@ -949,12 +1008,14 @@ footer div {
     width: 100%;
     top: 50%;
     right: 0;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
 }
 
 .mailing-list button {
     border-radius: 2px;
     transition: all ease-in-out 250ms;
+    -webkit-transition: all ease-in-out 250ms;
 }
 
 .mailing-list button:hover {
@@ -963,6 +1024,7 @@ footer div {
 
 .mailing-list button:active {
     transform: scale(.98);
+    -webkit-transform: scale(.98);
 }
 
 .email-list {
@@ -1000,9 +1062,17 @@ footer div {
 
 .footer-links li a {
     transition: all ease-in-out 750ms;
+    -webkit-transition: all ease-in-out 750ms;
 }
 
 .footer-links li a:hover {
         text-shadow: -1px -.5px 0px #ef5261;
         letter-spacing: .25em;
+}
+
+@media (max-width: 850px) {
+    footer {
+        font-size: .75em;
+        height:40vh;
+    }
 }

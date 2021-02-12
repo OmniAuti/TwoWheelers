@@ -331,8 +331,9 @@ header h1 {
 }
 
 .contact h3 {
-    margin-top: 1em;
-    font-size: 1.5em;
+    margin-top: 1.35em;
+    font-size: 1em;
+    font-size: 1em;
     text-decoration: underline;
 }
 
@@ -432,14 +433,23 @@ header h1 {
     -webkit-transition: all ease-out 500ms;
 }
 
-
 .office-hours {
     width: 33.3333%;
     height: 95%;
-    padding: 1em;
     text-align: center;
-    font-size: 1.25em;
 }
+
+#open-hours {
+    padding: 1em;
+}
+
+.office-hours h3 {
+    font-size: 1em;
+    margin-top: 1.35em;
+    text-decoration: underline;
+}
+
+margin-top: .55em;
 
 .caption {
     margin: 0 auto;
@@ -491,13 +501,20 @@ td:nth-last-of-type(odd) {
 }
 
 @media (max-width: 1200px) {
-    .office-hours {
+    #open-hours {
         font-size: .85em;
+    }
+
+    .office-hours h3,
+        .office-hours span {
+        font-size: .85em;
+        
     }
 
     .contact h3 {
         font-size: .85em;
     }
+    
 }
 
 @media (max-width: 850px) {
@@ -505,7 +522,7 @@ td:nth-last-of-type(odd) {
         display: none;
     }
 
-    .office-hours {
+    #open-hours {
         font-size: .5em;
     }
 

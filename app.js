@@ -169,7 +169,8 @@ function initMap() {
      })
  }
 
- // WEATHER APP ____________________
+ // WEATHER APP _____________________________________
+
 const tempDiv = document.getElementById('temp')
 const weatherDesc = document.getElementById('weather-desc')
 const windSpeed = document.getElementById('wind')
@@ -233,3 +234,9 @@ fetch(api)
                 windDirectDiv.innerHTML = 'North West'
             }
     })
+
+
+    // Cellphone viewport fix _________________________
+   
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty('--vh', `${vh}px`);

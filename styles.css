@@ -1139,6 +1139,17 @@ footer div {
         letter-spacing: .25em;
 }
 
+@media (max-width: 1000px)  {
+
+    .email-list {
+        font-size: .8em;
+        width: 115%;
+    }
+
+}
+
+
+
 @media (max-width: 850px) {
     footer {
         font-size: .75em;
@@ -1146,7 +1157,7 @@ footer div {
     }
 
     .email-list {
-        font-size: .70em;
+        font-size: .65em;
         width: 120%;
     }
 }

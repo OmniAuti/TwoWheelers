@@ -1053,7 +1053,7 @@ footer div {
     justify-content: space-between;
     text-align: center;
     position: relative;
-    width: 30%;
+    width: 40%;
 }
 
 .mailing-list form {
@@ -1139,15 +1139,6 @@ footer div {
         letter-spacing: .25em;
 }
 
-@media (max-width: 1000px)  {
-
-    .email-list {
-        font-size: .8em;
-        width: 115%;
-    }
-
-}
-
 
 
 @media (max-width: 850px) {
@@ -1157,7 +1148,7 @@ footer div {
     }
 
     .email-list {
-        font-size: .65em;
-        width: 120%;
+        font-size: .7em;
+        width: 100%;
     }
 }

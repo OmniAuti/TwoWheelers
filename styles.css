@@ -14,7 +14,7 @@ body {
 }
 
 html, body {
-    overflow-x:hidden 
+    overflow-x:hidden;
   } 
 
 body::-webkit-scrollbar {
@@ -818,65 +818,80 @@ td:nth-last-of-type(odd) {
     height: 95%;
     width: 40%;
     text-align: center;
+    border-bottom: 2px solid #232323;
+}
+
+hr {
+    color: #232323;
 }
 
 .weather-container {
     margin-top: 1.5em;
     position: relative;
-    height: 80%;
+    height: 85%;
+}
+
+
+#weather-icon {
+    height: 65px;
+    width: 65px;
+    
 }
 
 .weather-icon {
-    position: absolute;
-    top: 0;
-    left:50%;
-    transform: translateX(-50%);
-}
-
-#weather-icon {
-    height: 75px;
-    width: 75px;
-}
-
-.temp {
-    position: absolute;
-    left: 50%;
-    top: 45%;
-    transform: translate(-50%, -50%);
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #temp-feels {
    font-size: .75em;
 }
 
+#max-temp {
+    width: 30%;
+}
+
+#min-temp {
+    width: 30%;
+}
+
 .max-min-temp {
     position: relative;
-    top: 25px;
-    width: 80%;
-    margin: 0 auto;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.temp {
+    position: absolute;
+    left: 50%;
+    top: 146px;
+    transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    border: 2px solid #232323;
+
+    padding: 1em;
 }
 
 .wind {
     position: absolute;
     left: 50%;
-    top: 65%;
+    top: 75%;
     transform: translate(-50%, -50%);
 }
 
-.visibility {
+.bottom-weather {
     position: absolute;
-    left: 10%;
-    bottom: 10%
+    bottom: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
-
-.humidity {
-    position: absolute;
-    right: 10%;
-    bottom: 10%;
-}
-
 
 /* ------ FOOTER -------- */ 
 

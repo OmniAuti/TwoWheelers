@@ -209,13 +209,13 @@ fetch(api)
 
         const feels = Math.floor(data.main.feels_like)
 
-        tempDiv.innerHTML = `Current Temperature: ${temp}\xB0F`
+        tempDiv.innerHTML = `Currently: ${temp}\xB0F`
         weatherDesc.innerHTML = `${description}&#33`
         windSpeed.innerHTML = `Wind: ${wind}mph`
         feelsLike.innerHTML = `Real Feel: ${feels}\xB0F`
         weatherImg.src = `weatherapp/${weatherIcon}.png`
         visibility.innerHTML = `Visibility: ${vis} miles`
-        humidityDiv.innerHTML = `Humidity: ${humidity}&#37`
+        humidityDiv.innerHTML = `Humidity: ${humidity} &#37`
         windDirectDiv.innerHTML = windDirect
         maxTempDiv.innerHTML = `Today's High: ${maxTemp}`
         minTempDiv.innerHTML = `Today's Low: ${minTemp}`

@@ -983,6 +983,7 @@ hr {
     .bike-weather {
         width: 75%;
         margin: 1em auto;
+        height: 75%;
     }
 }
 
@@ -1052,6 +1053,7 @@ footer div {
     justify-content: space-between;
     text-align: center;
     position: relative;
+    width: 30%;
 }
 
 .mailing-list form {
@@ -1065,6 +1067,10 @@ footer div {
     right: 0;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.25);
+    width: 100%;
+    border-radius: 2px;
+    padding: 2em;
 }
 
 .mailing-list button {
@@ -1096,6 +1102,7 @@ footer div {
     background-color: #fff;
     text-align: center;
     box-shadow: none;
+    padding: .75em;
 }
 
 .email-list:focus,
@@ -1139,7 +1146,6 @@ footer div {
     }
 
     .email-list {
-        font-size: .85em;
-        padding: .75em;
+        font-size: .75em;
     }
 }

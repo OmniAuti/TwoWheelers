@@ -806,6 +806,10 @@ td:nth-last-of-type(odd) {
 
 @media (max-width: 850px) {
 
+    .repair-sale::after {
+        height: 1.5px;
+    }
+
     .repair-tables {
         flex-direction: column;
         width: 95%;

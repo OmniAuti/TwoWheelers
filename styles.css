@@ -256,10 +256,14 @@ header h1 {
     -webkit-transition: all ease-in-out 750ms;
 }
 
+.links-container i {
+    margin-right: 5px;
+}
+
 
 .links-container a:hover {
     text-shadow: -1px -.5px 0px #ef5261;
-    letter-spacing: .65em;
+    letter-spacing: .1em;
 }
 
 .visit-us-head {
@@ -680,7 +684,7 @@ td:nth-last-of-type(odd) {
 }
 
 .sale-inputs label {
-    margin: .75em;
+    margin: .5em;
     text-align: center;
 }
 
@@ -712,6 +716,13 @@ td:nth-last-of-type(odd) {
 
 .available p {
     margin-left: 5px;
+}
+
+@media (max-width: 1200px) {
+
+    .sale-desc {
+        font-size: .8em;
+    }
 }
 
 @media (max-width: 850px) {
@@ -1256,7 +1267,7 @@ footer div {
 
 .footer-links li a:hover {
         text-shadow: -1px -.5px 0px #ef5261;
-        letter-spacing: .25em;
+        letter-spacing: .1em;
 }
 
 

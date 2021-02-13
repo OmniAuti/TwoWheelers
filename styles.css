@@ -449,8 +449,6 @@ header h1 {
     text-decoration: underline;
 }
 
-margin-top: .55em;
-
 .caption {
     margin: 0 auto;
     position: relative;
@@ -548,13 +546,10 @@ td:nth-last-of-type(odd) {
     .visit-us p {
         font-size: .75em;
     }
-
 }
 
 
 /* ----------- SALES BOX ------------ */
-
-
 
 .sales {  
     height: 1100px;
@@ -588,6 +583,15 @@ td:nth-last-of-type(odd) {
     border: 1px solid #232323;
     height: 100%;
     min-width: 65%;
+    position: relative;
+}
+
+.sale-box h2 {
+    margin: 0 auto;
+    width: 200px;
+    text-align: center;
+    height: 15%;
+    margin-top: 10px;
 }
 
 .sale-pic {
@@ -605,13 +609,120 @@ td:nth-last-of-type(odd) {
    object-position: center;
 }
 
+.sale-options {
+    width: 100%;
+    height: 75%;
+    display: flex;
+}
 
-.sale-box h2 {
-    margin: 0 auto;
-    width: 200px;
+.sale-desc {
+    width: 40%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 1.5em;
+    font-weight: 0;
+}
+
+.sale-desc:nth-last-of-type(odd) {
+    text-align: right;
+}
+
+.sale-desc:nth-last-of-type(even) {
+    text-align: left;
+}
+
+.sale-select {
+    width:60%;
+    position: relative;
+    margin: 0 .25em;
+}
+
+.price {
     text-align: center;
 }
 
+.price span {
+    color: #ef5261;
+}
+
+.colors {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-one {
+    border: 1px solid #232323;
+    width: 75px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 .75em;
+    border-radius: 100px 0px;
+}
+
+.color-two {
+    border: 1px solid #232323;
+    width: 75px;
+    height: 10px;
+    display: inline-block;
+    margin: 0 .75em;
+    border-radius: 100px 0px;
+}
+
+.sale-inputs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.sale-inputs label {
+    margin: .75em;
+    text-align: center;
+}
+
+.sale-inputs input,
+    .sale-inputs select {
+    font-size: 1em;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 2px;
+    border: 1px solid #232323;
+}
+
+.sale-inputs input:active,
+.sale-inputs input:focus,
+.sale-inputs select:active,
+.sale-inputs select:focus {
+    outline:none;
+    border-color: #232323;
+}
+
+.available {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.available p {
+    margin-left: 5px;
+}
+
+@media (max-width: 850px) {
+    .sales {
+        font-size: .75em;
+    }
+
+    .sale-desc {
+        font-size: .6em;
+    }
+}
 
 /* ------------- REPAIRS ----------- */
 
@@ -1149,7 +1260,6 @@ footer div {
 }
 
 
-
 @media (max-width: 850px) {
     footer {
         font-size: .75em;
@@ -1164,6 +1274,4 @@ footer div {
     footer h3 {
         font-size: .85em;
     }
-
-
 }

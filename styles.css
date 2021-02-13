@@ -691,7 +691,7 @@ td:nth-last-of-type(odd) {
 .sale-inputs input,
     .sale-inputs select {
     font-size: 1em;
-    width: 50%;
+    width: 70%;
     margin: 0 auto;
     border-radius: 2px;
     border: 1px solid #232323;
@@ -732,6 +732,15 @@ td:nth-last-of-type(odd) {
 
     .sale-desc {
         font-size: .4em;
+    }
+
+    .sale-inputs input,
+    .sale-inputs select {
+        font-size: 20px !important;
+    }
+
+    .available {
+        font-size: .9em;
     }
 }
 
@@ -1278,8 +1287,8 @@ footer div {
     }
 
     .email-list {
-        font-size: .7em;
-        width: 100%;
+        font-size: 16px;
+        width: 130%;
     }
 
     footer h3 {

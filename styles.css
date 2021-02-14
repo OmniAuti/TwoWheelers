@@ -304,18 +304,6 @@ header h1 {
     .links-container a {
         font-size: .65em;
     }
-
-}
-
-@media (max-width: 375px) {
-    header h1 {
-        font-size: 1.75em;
-    }
-
-    .logo {
-        height: 50px;
-        width: 50px;
-    }
 }
 
 
@@ -537,7 +525,7 @@ td:nth-last-of-type(odd) {
     }
 
     #open-hours {
-        font-size: 1em;
+        font-size: .5em;
     }
 
     .visit-us div {
@@ -551,12 +539,12 @@ td:nth-last-of-type(odd) {
     .directions {
         margin-top: 4em;
         font-size: 1em;
-        height: 100px;
+        height: 125px;
     }
 
     .call-in {
         font-size: .8em;
-        height: 100px;
+        height: 125px;
     }
 
     .visit-us p {
@@ -564,20 +552,6 @@ td:nth-last-of-type(odd) {
     }
 }
 
-@media (max-width: 375px) {
-    .directions {
-        margin-top: 1em;
-    }
-
-    #open-hours {
-        font-size: .25em;
-    }
-
-    .visit-us table {
-        height: 80%;
-    }
-
-}
 
 /* ----------- SALES BOX ------------ */
 
@@ -1028,13 +1002,6 @@ td:nth-last-of-type(odd) {
         font-size: .75em;
     }
 }
-
-@media (max-width: 375px) {
-
-    .tune-up-price {
-        font-size: .5em;
-    }
-}
 /* ------------ APPS ------------ */
 
 .biking-apps {
@@ -1136,25 +1103,18 @@ hr {
     
     .biking-apps {
         flex-direction: column;
-        height: 825px;
+        height: 150vh;
     }
     
     .bike-lanes {
         width: 75%;
-        margin: 0 auto;
-        height: 400px;
+        margin: 1em auto;
     }
     
     .bike-weather {
-        width: 80%;
-        margin: 0 auto;
-        height: 300px;
-    }
-}
-
-@media (max-width: 375px) {
-    .weather-container {
-        font-size: .8em;
+        width: 75%;
+        margin: 1em auto;
+        height: 75%;
     }
 }
 
@@ -1328,21 +1288,10 @@ footer div {
 
     .email-list {
         font-size: 16px;
-        width: 100%;
+        width: 130%;
     }
 
     footer h3 {
         font-size: .85em;
-    }
-}
-
-@media (max-width: 375px) {
-    footer {
-        font-size: .5em;
-    }
-
-    .email-list {
-        font-size: 16px;
-        width: 100%;
     }
 }

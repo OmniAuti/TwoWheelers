@@ -307,7 +307,7 @@ header h1 {
 
 }
 
-@media (max-width: 425px) {
+@media (max-width: 375px) {
     header h1 {
         font-size: 1.75em;
     }
@@ -564,7 +564,7 @@ td:nth-last-of-type(odd) {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 375px) {
     .directions {
         margin-top: 1em;
     }
@@ -1029,7 +1029,7 @@ td:nth-last-of-type(odd) {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 375px) {
 
     .tune-up-price {
         font-size: .5em;
@@ -1152,7 +1152,7 @@ hr {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 375px) {
     .weather-container {
         font-size: .8em;
     }
@@ -1336,7 +1336,7 @@ footer div {
     }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 375px) {
     footer {
         font-size: .5em;
     }

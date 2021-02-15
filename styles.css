@@ -1125,13 +1125,13 @@ hr {
     }
     
     .bike-lanes {
-        width: 75%;
+        width: 90%;
         margin: 1em auto;
         height: 400px;
     }
     
     .bike-weather {
-        width: 75%;
+        width: 90%;
         margin: 1em auto;
         height: 75%;
         height: 400px;
@@ -1313,5 +1313,16 @@ footer div {
 
     footer h3 {
         font-size: .85em;
+    }
+}
+
+@media (max-width: 375px) {
+    footer {
+        font-size: .55em; 
+    }
+
+    .email-list {
+        font-size: 16px;
+        width: 130%;
     }
 }

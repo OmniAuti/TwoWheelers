@@ -552,12 +552,12 @@ td:nth-last-of-type(odd) {
     .directions {
         margin-top: 4em;
         font-size: 1em;
-        height: 125px;
+        height: 110px;
     }
 
     .call-in {
         font-size: .8em;
-        height: 125px;
+        height: 110px;
     }
 
     .visit-us p {

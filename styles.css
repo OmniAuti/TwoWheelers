@@ -310,6 +310,10 @@ header h1 {
         width:50px; 
     }
 
+    header h1 {
+        font-size: 2em;
+    }
+
     .links-container a {
         font-size: .55em;
     }

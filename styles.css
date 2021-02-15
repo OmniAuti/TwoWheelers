@@ -304,6 +304,17 @@ header h1 {
     }
 }
 
+@media (max-width: 375px) {
+    .logo {
+        height:50px;
+        width:50px; 
+    }
+
+    .links-container a {
+        font-size: .55em;
+    }
+}
+
 
 /* --------- VISIT US ----------- */
 
@@ -554,6 +565,11 @@ td:nth-last-of-type(odd) {
     }
 }
 
+@media (max-width: 375px) {
+    #open-hours {
+        font-size: .3em;
+    }
+}
 
 /* ----------- SALES BOX ------------ */
 
@@ -1105,18 +1121,20 @@ hr {
     
     .biking-apps {
         flex-direction: column;
-        height: 150vh;
+        height: 900px;
     }
     
     .bike-lanes {
         width: 75%;
         margin: 1em auto;
+        height: 400px;
     }
     
     .bike-weather {
         width: 75%;
         margin: 1em auto;
         height: 75%;
+        height: 400px;
     }
 }
 

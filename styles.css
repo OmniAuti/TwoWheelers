@@ -1024,6 +1024,16 @@ td:nth-last-of-type(odd) {
         font-size: .75em;
     }
 }
+
+@media (max-width: 375px) {
+    .tune-up-specs {
+        font-size: .5em;
+    }
+
+    .tune-up-price {
+        font-size: .7em;
+    }
+}
 /* ------------ APPS ------------ */
 
 .biking-apps {

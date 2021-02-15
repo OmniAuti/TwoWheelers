@@ -295,9 +295,7 @@ header h1 {
 
     .visit-us-head {
         font-size: 1em;
-
     }
-
 }
 
 @media (max-width: 800px) {
@@ -353,6 +351,8 @@ header h1 {
     font-size: 1.5em;
     border-radius: 2px;
     margin-top: 1.5em;
+    position:absolute;
+    bottom: 45%;
 }
 
 .directions a {
@@ -389,6 +389,8 @@ header h1 {
     height: 85px;
     border-radius: 2px;
     margin-top: 2.5em;
+    position:absolute;
+    bottom: 10%;
 }
 
 .call-in a {
@@ -461,7 +463,7 @@ header h1 {
 
 table {
     width: 100%;
-    height: 90%;
+    height: 85%;
     padding: 0;
 }
 
@@ -539,12 +541,12 @@ td:nth-last-of-type(odd) {
     .directions {
         margin-top: 4em;
         font-size: 1em;
-        height: 125px;
+        height: 100px;
     }
 
     .call-in {
         font-size: .8em;
-        height: 125px;
+        height: 100px;
     }
 
     .visit-us p {

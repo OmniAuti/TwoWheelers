@@ -464,6 +464,10 @@ header h1 {
     padding: 1em;
 }
 
+.day {
+    letter-spacing: 2px;
+}
+
 .office-hours h3 {
     font-size: 1em;
     margin-top: 1.35em;
@@ -536,6 +540,16 @@ td:nth-last-of-type(odd) {
     
 }
 
+@media (max-width: 950px) {
+    .day {
+        font-size: .75em;
+    }
+
+    #open-hours {
+        font-size: .75em;
+    }
+}
+
 @media (max-width: 850px) {
     .map {
         display: none;
@@ -569,9 +583,26 @@ td:nth-last-of-type(odd) {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 500px) {
+    .day {
+        font-size: .15em;
+        letter-spacing: 1px;
+    }
+
     #open-hours {
-        font-size: .3em;
+        font-size: .15em;
+    }
+}
+
+
+@media (max-width: 375px) {
+    .day {
+        font-size: 5px;
+        letter-spacing: 1px;
+    }
+
+    #open-hours {
+        font-size: 7.5px;
     }
 }
 

@@ -26,11 +26,20 @@ function play() {
 function changeImg() {
     if (idx > pics.length - 1) {
         idx = 0
+        container.style.transition = `none`
+        container.style.transform = `translateX(${idx * -100}%)`
     } else if (idx < 0) {
         idx = pics.length - 1
-    }
+        container.style.transition = `none`
+        container.style.transform = `translateX(${idx * -100}%)`
+    } else {
+    container.style.transition = 'transform 750ms ease-in-out'
     container.style.transform = `translateX(${idx * -100}%)`
 }
+console.log(idx)
+}
+
+
 
 function btnCheck() {
     if (idx === 0) {
@@ -51,12 +60,14 @@ pause.addEventListener('click', () => {
 
 rightBtn.addEventListener('click', () => {
     idx++
+    pause.classList.add('pause')
     changeImg()
     clearInterval(interval)
 })
 
 leftBtn.addEventListener('click', () => {
     idx--
+    pause.classList.add('pause')
     changeImg()
     clearInterval(interval)
 })

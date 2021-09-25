@@ -1,4 +1,4 @@
 # TwoWheelers
-Bike Store
+Bike Store Template
 
-https://autiomni.github.io/TwoWheelers/
+https://omniauti.github.io/TwoWheelers/

@@ -127,7 +127,7 @@ function weekendHours() {
 storeHours()
 storeDay()
 
-// GOOGLE MAP _____________________________________________________
+// GOOGLE MAP ____________________________________________________
 
 var shop = { lat:41.962220, lng: -87.652397 }
 
